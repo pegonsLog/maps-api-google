@@ -1,0 +1,43 @@
+<!--
+<div class="margem-inferior">
+  <label class="margem-direita">CEP</label>
+  <input type="text" name="cep" id="cep">
+</div>
+<div class="margem-inferior">
+  <label class="margem-direita">RUA</label>
+  <input type="text" name="rua" id="rua">
+</div>
+<div class="margem-inferior">
+  <label class="margem-direita">NUMERO</label>
+  <input type="text" name="numero" id="numero">
+</div>
+<div class="margem-inferior">
+  <label class="margem-direita">BAIRRO</label>
+  <input type="text" name="bairro" id="bairro">
+</div>
+<div class="margem-inferior">
+  <label class="margem-direita">CIDADE</label>
+  <input type="text" name="cidade" id="cidade">
+</div>
+<div class="margem-inferior">
+  <label class="margem-direita">ESTADO</label>
+  <input type="text" name="estado" id="estado">
+</div> -->
+
+
+      <form method="get" action=".">
+        <label>Cep:
+          <input name="cep" type="text" #cep size="10" maxlength="9"
+                 (blur)="pesquisacep(cep.value);" /></label><br />
+
+        <label>Rua:
+        <input name="rua" type="text" #rua size="60" /></label><br />
+        <label>Bairro:
+        <input name="bairro" type="text" #bairro size="40" /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" #cidade size="40" /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" #uf size="40" /></label><br />
+        <label>IBGE:
+        <input name="ibge" type="text" #ibge size="40" /></label><br />
+      </form>
